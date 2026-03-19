@@ -72,7 +72,7 @@ export default function SkillGlobe() {
     const nodeMeshes = [], labelSprites = [];
 
   function mkSprite(text, color) {
-  const c2 = document.createElement('canvas'), ctx = c2.getContext('2d'), fs = 22;
+  const c2 = document.createElement('canvas'), ctx = c2.getContext('2d'), fs = 50;
   ctx.font = `bold ${fs}px Syne,sans-serif`;
   const w = ctx.measureText(text).width + 28;
   c2.width = w; c2.height = fs + 18;
@@ -80,7 +80,7 @@ export default function SkillGlobe() {
   ctx.fillStyle = color; ctx.textBaseline = 'middle';
   ctx.fillText(text, 14, c2.height / 2);
   const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(c2), transparent: true, depthTest: false }));
-  sp.scale.set(c2.width / 10, c2.height / 10, 1);
+  sp.scale.set(c2.width / 17, c2.height / 17, 1);
   return sp;
 }
 
