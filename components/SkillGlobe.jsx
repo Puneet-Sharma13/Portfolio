@@ -73,7 +73,7 @@ export default function SkillGlobe() {
 
     function mkSprite(text, color) {
   const c2 = document.createElement('canvas'), ctx = c2.getContext('2d'), fs = 48;
-  const scale = 2; // retina sharpness multiplier
+  const scale = 4; // retina sharpness multiplier
   ctx.font = `bold ${fs * scale}px Syne,sans-serif`;
   const w = ctx.measureText(text).width + 28;
   c2.width = w * scale; 
@@ -83,7 +83,7 @@ export default function SkillGlobe() {
   ctx.textBaseline = 'middle';
   ctx.fillText(text, 14 * scale, c2.height / 2);
   const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(c2), transparent: true, depthTest: false }));
-  sp.scale.set(c2.width / 20, c2.height / 20, 1);
+  sp.scale.set(c2.width / 40, c2.height / 40, 1);
   return sp;
 }
 
