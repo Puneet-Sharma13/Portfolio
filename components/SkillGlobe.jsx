@@ -20,7 +20,7 @@ export default function SkillGlobe() {
     const catMap = Object.fromEntries(GLOBE_CATS.map(c => [c.id, c]));
 
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 1));
     renderer.setClearColor(0x000000, 0);
 
     const scene  = new THREE.Scene();
