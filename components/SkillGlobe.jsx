@@ -38,7 +38,7 @@ export default function SkillGlobe() {
     ro.observe(wrap);
 
     scene.add(new THREE.Mesh(
-      new THREE.SphereGeometry(160, 28, 28),
+      new THREE.SphereGeometry(160, 16, 16),
       new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true, transparent: true, opacity: 0.04 })
     ));
 
