@@ -38,7 +38,7 @@ export default function SkillGlobe() {
     ro.observe(wrap);
 
     scene.add(new THREE.Mesh(
-      new THREE.SphereGeometry(160, 16, 16),
+      new THREE.SphereGeometry(160, 28, 28),
       new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true, transparent: true, opacity: 0.04 })
     ));
 
@@ -71,19 +71,16 @@ export default function SkillGlobe() {
     const positions  = fibSphere(GLOBE_NODES.length, 155);
     const nodeMeshes = [], labelSprites = [];
 
-    function mkSprite(text, color) {
-  const c2 = document.createElement('canvas'), ctx = c2.getContext('2d'), fs = 48;
-  const scale = 4; // retina sharpness multiplier
-  ctx.font = `bold ${fs * scale}px Syne,sans-serif`;
+  function mkSprite(text, color) {
+  const c2 = document.createElement('canvas'), ctx = c2.getContext('2d'), fs = 22;
+  ctx.font = `bold ${fs}px Syne,sans-serif`;
   const w = ctx.measureText(text).width + 28;
-  c2.width = w * scale; 
-  c2.height = (fs + 18) * scale;
-  ctx.font = `bold ${fs * scale}px Syne,sans-serif`;
-  ctx.fillStyle = color; 
-  ctx.textBaseline = 'middle';
-  ctx.fillText(text, 14 * scale, c2.height / 2);
+  c2.width = w; c2.height = fs + 18;
+  ctx.font = `bold ${fs}px Syne,sans-serif`;
+  ctx.fillStyle = color; ctx.textBaseline = 'middle';
+  ctx.fillText(text, 14, c2.height / 2);
   const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(c2), transparent: true, depthTest: false }));
-  sp.scale.set(c2.width / 40, c2.height / 40, 1);
+  sp.scale.set(c2.width / 10, c2.height / 10, 1);
   return sp;
 }
 
