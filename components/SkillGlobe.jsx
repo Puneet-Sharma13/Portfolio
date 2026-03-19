@@ -38,7 +38,7 @@ export default function SkillGlobe() {
     ro.observe(wrap);
 
     scene.add(new THREE.Mesh(
-      new THREE.SphereGeometry(160, 16, 16),
+      new THREE.SphereGeometry(160, 20, 20),
       new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true, transparent: true, opacity: 0.04 })
     ));
 
@@ -80,7 +80,7 @@ export default function SkillGlobe() {
   ctx.fillStyle = color; ctx.textBaseline = 'middle';
   ctx.fillText(text, 14, c2.height / 2);
   const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(c2), transparent: true, depthTest: false }));
-  sp.scale.set(c2.width / 5, c2.height / 5, 1);
+  sp.scale.set(c2.width / 6, c2.height / 6, 1);
   return sp;
 }
 
