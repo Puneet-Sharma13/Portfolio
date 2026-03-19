@@ -80,7 +80,7 @@ export default function SkillGlobe() {
   ctx.fillStyle = color; ctx.textBaseline = 'middle';
   ctx.fillText(text, 14, c2.height / 2);
   const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(c2), transparent: true, depthTest: false }));
-  sp.scale.set(c2.width / 10, c2.height / 10, 1);
+  sp.scale.set(c2.width / 8, c2.height / 8, 1);
   return sp;
 }
 
