@@ -120,6 +120,7 @@ export default function SkillGlobe() {
         }
       });
     }
+    buildLines();
 
     const raycaster = new THREE.Raycaster();
     const mouse2    = new THREE.Vector2(-99, -99);
@@ -203,7 +204,7 @@ export default function SkillGlobe() {
         s.position.copy(pos);
         s.material.opacity = Math.max(0, pos.clone().normalize().dot(new THREE.Vector3(0, 0, 1)) * 1.8 - 0.3);
       });
-      buildLines();
+      //buildLines();
       ring1.material.opacity = 0.07 + Math.sin(t * 0.8) * 0.05;
       ring2.material.opacity = 0.04 + Math.sin(t * 1.1 + 1) * 0.03;
       renderer.render(scene, camera);
