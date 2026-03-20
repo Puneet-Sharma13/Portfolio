@@ -28,17 +28,17 @@ const TABS = [
   {
     label: 'Experience',
     id: 'experience',
-    items: [{ title: 'July 2025 - Sep 2025', desc: 'JVC Solutions — Software Engineer Intern' },
-            { title: 'Oct 2025 - Present', desc: 'Brillio — Data Science Intern' }],
+    items: [{ title: 'Oct 2025 - Present', desc: 'Brillio — Data Science Intern' },
+            { title: 'July 2025 - Sep 2025', desc: 'JVC Solutions — Software Engineer Intern' }],
     
   },
   {
     label: 'Education',
     id: 'education',
     items: [
-      { title: '2019 — 10th Grade', desc: 'S.D. Adarsh Public School' },
+      { title: '2021 — 2025',       desc: 'B.Tech-CSE — Chandigarh Group of College' },
       { title: '2021 — 12th Grade', desc: 'S.D. Adarsh Public School' },
-      { title: '2021 — 2025',       desc: 'B.Tech — Chandigarh Group of College' },
+      { title: '2019 — 10th Grade', desc: 'S.D. Adarsh Public School' },
     ],
   },
 ];
