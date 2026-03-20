@@ -103,7 +103,7 @@ export const PROJECTS = [
     img: '/images/work-3.png',
     fallback: 'https://placehold.co/600x340/131320/ff004f?text=Shopping+App',
     title: 'Online Shopping App',
-    desc: 'Feature-rich mobile shopping app connecting users worldwide, available on Play Store.',
+    desc: 'Feature-rich mobile shopping app connecting users worldwide.',
     link: '#',
   },
 ];
