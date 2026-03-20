@@ -159,7 +159,7 @@ export default function About() {
               I design and build AI-powered systems — from autonomous agents and LLM pipelines to clean, responsive user interfaces.
             </Typography>
             <Typography sx={{ fontSize: '0.95rem', color: COLORS.textMuted, lineHeight: 1.85, mb: 3 }}>
-              Currently working as a <strong style={{ color: COLORS.text }}>Data Science Intern</strong>, I work with tools like{' '}
+              Currently working as a <strong style={{ color: COLORS.text }}>Data Science Intern</strong> at <strong style={{ color: COLORS.text }}>Brillio(Bangalore – CTO Office)</strong>, I work with tools like{' '}
               <strong style={{ color: COLORS.text }}>LangChain, LangGraph, FastAPI, React & n8n</strong>{' '}
               to deliver intelligent, end-to-end applications that solve real problems.
             </Typography>
