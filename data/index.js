@@ -86,21 +86,21 @@ export const SERVICES = [
 
 export const PROJECTS = [
   {
-    img: '/images/work-1.png',
+    img: '/images/work-1.webp',
     fallback: 'https://placehold.co/600x340/131320/ff004f?text=QuizNest',
     title: 'QuizNest',
     desc: 'Interactive quiz platform to test knowledge across multiple topics with dynamic scoring.',
     link: '#',
   },
   {
-    img: '/images/work-2.png',
+    img: '/images/work-2.webp',
     fallback: 'https://placehold.co/600x340/131320/ff004f?text=Gemini+Clone',
     title: 'Gemini Clone',
     desc: 'AI-powered conversational interface built with LLM integration and real-time dynamic responses.',
     link: '#',
   },
   {
-    img: '/images/work-3.png',
+    img: '/images/work-3.webp',
     fallback: 'https://placehold.co/600x340/131320/ff004f?text=Shopping+App',
     title: 'Online Shopping App',
     desc: 'Feature-rich mobile shopping app connecting users worldwide.',
