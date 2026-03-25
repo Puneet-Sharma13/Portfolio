@@ -142,7 +142,7 @@ export default function Contact() {
 
             {/* Resume */}
             <Link
-              href="./images/PuneetSharma.pdf"
+              href="/images/PuneetSharma.pdf"
               download
               underline="none"
               sx={{
